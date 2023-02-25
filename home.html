@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar's Cipher</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Caesar's Cipher</h1>
+      <form>
+        <div class="form-group">
+          <label for="input-text">Enter text to encode/decode:</label>
+          <textarea id="input-text" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="shift-number">Shift by:</label>
+          <input type="number" id="shift-number" value="" min="1" max="25">
+        </div>
+        <div class="form-group">
+          <label>Direction:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="shift-direction" id="shift-right" value="right" checked>
+            <label class="form-check-label" for="shift-right">Right</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="shift-direction" id="shift-left" value="left">
+            <label class="form-check-label" for="shift-left">Left</label>
+          </div>
+        </div>
+        <button type="button" id="run-btn" class="btn btn-primary btn-lg">Encode/Decode</button>
+        <button type="button" id="clear-btn" class="btn btn-secondary btn-lg">Clear</button>
+        <div class="form-group">
+          <label for="output-text">Result:</label>
+          <textarea id="output-text" rows="5" readonly></textarea>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
